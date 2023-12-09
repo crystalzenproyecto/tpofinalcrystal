@@ -1,0 +1,43 @@
+{% include 'cabecera.html' %}
+
+<div class = "servicios-ppal">
+    <img src="{{ url_for('static', filename='img/yoga.jpg') }}" alt = "yoga" id = "yoga">
+    <div class = "servicios-texto"> 
+        <h2 class = "yoga-h2">Anasura Yoga & Pilates</h2>
+        <p>Anusara significa, entre otros, “el alma que fluye con el universo”. Es un tipo de yoga que tiene su base en el hatha yoga, pero con un importante componente filosófico e intencional.</p>
+        <!-- <p><b>ANUSARA:</b> ir con la corriente ó seguir lo que dicta el corazón</p> -->
+        <p>En esta filosofía hay mucha aceptación y permisividad ante las diferencias y desviaciones ya que parte de la premisa de que cada individuo es esencialmente bueno y tan solo necesitamos realzar y revelar la belleza que se encuentra presente dentro de cada uno de nosotros. Además, se caracteriza por las tres “A”:</p>
+        <ul>
+            <li><b>Actitud:</b> moverse motivado por el amor.</li>
+            <li><b>Alineación:</b> tomar conciencia de la conexión entre cuerpo y mente.</li>
+            <li><b>Acción:</b> a través del flujo o canalización natural de energía corporal, lo cual produce una sensación de libertad y estabilidad a todos los niveles.</li>
+        </ul>
+    </div>
+</div>
+
+<h2 class = "yoga-h2-beneficios">Beneficios de la Anusara Yoga</h2>
+
+<div class = "beneficios-yoga">
+    <article class = "articulo-yoga">
+        <h3>Flexibilidad</h3>
+        <img src="{{ url_for('static', filename='iconos/loto1.png') }}" id = "icono-yoga" alt = "yoga">
+        <p>Como en otros estilos, anusara yoga produce beneficios a nivel de flexibilidad corporal, del sistema circulatorio y del linfático.</p>
+    </article>
+    <article class = "articulo-yoga">
+        <h3>Amplitud mental</h3>
+        <img src=" {{ url_for('static', filename='iconos/loto.png') }}" id = "icono-yoga" alt = "yoga">
+        <p> Nos ayuda a cambiar nuestra forma de ver las cosas, a aceptarlas tal cual son y a disfrutar de todo lo que nos rodea.</p>
+    </article>
+    <article class = "articulo-yoga">
+        <h3>Conciencia espiritual</h3>
+        <img src="{{ url_for('static', filename='iconos/yoga.png') }}" id = "icono-yoga" alt = "yoga">
+        <p>
+             Comprobarás el poder y el bienestar de formar parte de esta concienciación, de vivir “despierto”.
+             Despierta tu verdadero ser.</p>
+    </article>
+</div>
+    
+<div class = "botton-inscribirse">
+   <a href="/contacto">!EMPEZA AHORA!</a>
+</div>
+{% include 'pie.html' %}

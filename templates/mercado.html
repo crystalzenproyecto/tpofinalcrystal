@@ -1,0 +1,20 @@
+{% include 'cabecera.html' %}
+<div class="container">
+    <div class="piedras-encabezado">
+        <h2>Nuestros productos</h2>
+    </div>
+
+    <div class="piedras">
+        {% for todosproducto in todosproductos %}
+        <article class="piedra">
+            <img src="{{ todosproducto.imagen }}" alt="{{ todosproducto.titulo }}" id="gema">
+            <div class="contenido-piedra">
+                <h2>{{ todosproducto.titulo }}</h2>
+                <div class="boton-piedras">
+                    <p><a class="vinculo-p" href="{{ url_for('sabermas', id=todosproducto.id) }}">¡SABER MÁS!</a></p>
+                </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+{% include 'pie.html' %}

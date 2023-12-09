@@ -1,0 +1,20 @@
+{% include 'cabecera.html' %}
+
+
+<div class="sabermas-container">
+    <div class="imagengema">
+        <img src="{{ detalleproducto.imagen }}" alt="{{ detalleproducto.titulo }}">
+    </div>
+
+    <div class="contenido1">
+        <h1>{{ detalleproducto.titulo }}</h1>
+        <div class="contenido2">
+            <h2>Descripción</h2>
+            <p>{{ detalleproducto.descripcion }}</p>
+            <span class="descuento">{{ detalleproducto.descuento }}</span>
+            <p class="precio-popup precio">{{ detalleproducto.precio }}</p>
+        </div>
+    </div>
+
+</div>
+{% include 'pie.html' %}

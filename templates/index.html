@@ -1,0 +1,82 @@
+{% include 'cabecera.html' %}
+    <!--BANNER-->
+    <section id="banner" class="banner">
+        <img src="{{ url_for('static', filename='img/banner-img.png') }}" alt="">
+        <div class="content-banner">
+            <h1>¿LISTO PARA TRANSFORMAR TU ENERGÍA?</h1>
+            <p>DESCUBRE CÓMO NUESTRAS PIEDRAS PUEDEN LOGRARLO</p>
+            <a href="/guia-cristales">DESCUBRE MÁS</a>
+        </div>
+    </section>
+
+    <!--INFORMACION GENERAL-->
+    <section id="info-gral">
+        <div class="container info-gral">
+
+            <div class="icon-gema">
+                <i class="fa-solid fa-gem"></i>
+                <p>CERTIFICADO DE AUTENTICIDAD"</p>
+                <h4>Por el GIA (Gemological Institute of America)</h4>
+            </div>
+
+            <div class="icon-despacho">
+                <i class="fa-solid fa-truck"></i>
+                <p>DESPACHO GRATIS</p>
+                <h4>Conoce los plazos de entrega</h4>
+            </div>
+            <div class="icon-tienda">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>RETIRO EN TIENDA</p>
+                <h4>Gratis</h4>
+            </div>
+
+            <div class="icon-asesoria">
+                <i class="fa-solid fa-comments"></i>
+                <p>ASESORAMIENTO</p>
+                <h4>Te responderemos a la brevedad</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--PRODUCTOS-->
+    <article class="section-productos">
+
+        <div class="container productos">
+            <h2> PRODUCTOS DESTACADOS</h2>
+            <div class="container-productos">
+
+                {% for homeproducto in homeproductos %}
+                <div class="card-productos">
+                    <a href="#" class="img-a"
+                        onclick="mostrarPopup(event,'popup1', '{{ homeproducto.imagen }}', '{{ homeproducto.titulo }}', '{{ homeproducto.precio }}')">
+                        <img src="{{ homeproducto.imagen }}" alt="" class="img-producto img-producto-popup">
+                        <i class="fa-solid fa-magnifying-glass lupa"></i>
+                    </a>
+                    <div class="contenedor-card-productos">
+                        <h2 class="title-producto titulo-popup">{{ homeproducto.titulo }}</h2>
+                        <p class="descripcion">{{ homeproducto.descripcion }}</p>
+                        <span class="descuento">{{ homeproducto.descuento }}</span>
+                        <p class="precio-popup precio">{{ homeproducto.precio }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </article>
+
+    <!-- VENTANA EMERGENTE-->
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <a href="#" class="cerrar" onclick="ocultarPopup(event, 'popup1')">X</a>
+            <img src="" alt="" class="img-producto-popup">
+            <h2 class="titulo-popup title-producto"></h2>
+            <p class="precio-popup precio"></p>
+        </div>
+    </div>
+
+{% include 'pie.html' %}

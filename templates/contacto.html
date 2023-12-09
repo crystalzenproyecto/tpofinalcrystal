@@ -1,0 +1,60 @@
+{% include 'cabecera.html' %}
+<!-- CONTACTO-->
+<div class="contenedor-contacto">
+    <section class="contacto" id="contacto">
+        <h2 class="contacto-titulo">Contacto</h2>
+        <div class="contacto-detalles">
+            <div class="contacto-detalles-grupo">
+                <p class="contacto-label">Dirección: </p>
+                <p class="contacto-texto">Av. Congreso & Av. Cabildo, CABA, Argentina</p>
+            </div>
+            <div class="contacto-detalles-grupo">
+                <p class="contacto-label">Email: </p>
+                <p class="contacto-texto">crystalzen@gmail.com </p>
+            </div>
+            <div class="contacto-detalles-grupo">
+                <p class="contacto-texto">Deje su mensaje y con gusto le responderemos</p>
+            </div>
+        </div>
+        <form class="contacto-form" id="miFormulario">
+            <div class="contacto-form-grupo">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="contacto-form-grupo">
+                <label for="correo">Email</label>
+                <input type="email" name="correo" id="correo">
+            </div>
+            <div class="contacto-form-grupo">
+                <label for="mensaje">Comentarios</label>
+                <textarea name="mensaje" id="mensaje" rows="6"></textarea>
+            </div>
+            <button type="button" class="btn-gral " id="btn-gral " onclick="enviarFormulario()">Enviar</button>
+        </form>
+
+    </section>
+</div>
+
+   <!--SUSCRIPCION Y NOTICIAS-->
+   <article id="suscripcion-mapa">
+    <div class="container-map-suscripcion">
+        <div class=" column cont-suscripcion">
+            <h4>¿ERES FAN DE CRYSTALZEN?</h4>
+            <h1>ÚNETE A NUESTRO NEWSLETTER</h1>
+            <p>!Y conoce nuestras últimas novedades y ofertas!</p>
+            <form id="subscribe-form">
+                <input id="email" name="email" required placeholder="su-email@ejemplo.com">
+                <button type="submit">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="column contenedor-mapa">
+            <h2>AQUI ESTAMOS UBICADOS</h2>
+      
+                 <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9222601407505!2d-58.46524112481585!3d-34.55552365495354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb429fbadf82d%3A0x59318b3f33e5a57!2sAv.%20Congreso%20%26%20Av.%20Cabildo%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697547010108!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</article>
+{% include 'pie.html' %}

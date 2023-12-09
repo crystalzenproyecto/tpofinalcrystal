@@ -1,0 +1,73 @@
+{% include 'cabecera.html' %}
+
+   <!--EXPLORAR CONTENIDO (BLOG)-->
+   <article id="section-explorar">
+    <div class=" container parrafo-section-explorar">
+        <h2>Explora el Poder de las Piedras y Cristales en la Sanación</h2>
+        <p>Entra en un mundo de energía, equilibrio y sanación a través de los cristales y las piedras preciosas.
+            Descubre cómo utilizar estas maravillas de la naturaleza para mejorar tu bienestar físico y espiritual.
+            Explora nuestra selección de enlaces informativos sobre el uso de piedras y cristales en la sanación, y
+            empieza tu viaje hacia una vida más equilibrada y armoniosa.</p>
+    </div>
+    <div class=" container  container-grilla">
+        <div class="explorar-contenido">
+            <div class="detalles-tarjeta">
+                <a href="/guia-cristales">
+                    <img src="{{ url_for('static', filename='img/blog1.png') }}" alt="" class="img-tarjetas">
+                </a>
+                <div class="text-tarjeta">
+                    <h3>¿CÓMO USARLAS?</h3>
+                    <p>Guía de Cristales Sanadores: Cómo Elegir el Cristal Perfecto para Ti</p>
+                    <a href="/guia-cristales" class="btn-gral">SABER MÁS</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="explorar-contenido">
+            <div class="detalles-tarjeta">
+                <a href="herramientas-sanacion">
+                    <img src="{{ url_for('static', filename='img/blog2.png') }}" alt="" class="img-tarjetas">
+                </a>
+                <div class="text-tarjeta">
+                    <h3>HERRAMIENTAS DE SANACIÓN</h3>
+                    <p>Terapias alternativas con Cristales: Sanación Holística</p>
+                    <a href="/herramientas-sanacion" class="btn-gral">SABER MÁS</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="explorar-contenido">
+            <div class="detalles-tarjeta">
+                <a href="cuidado">
+                    <img src="{{ url_for('static', filename='img/blog3.png') }}" alt="" class="img-tarjetas">
+                </a>
+                <div class="text-tarjeta">
+                    <h3>CUIDADO Y LIMPIEZA</h3>
+                    <p>Cómo limpiar tus Cristales para una energía óptima</p>
+                    <a href="cuidado" class="btn-gral">SABER MÁS</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="explorar-contenido item-explorar-none">
+            <div class="detalles-tarjeta">
+                <a href="cristaloterapia">
+                    <img src="{{ url_for('static', filename='img/blog4.png') }}" alt="" class="img-tarjetas">
+                </a>
+                <div class="text-tarjeta">
+                    <h3>CRISTALOTERAPIA</h3>
+                    <p>Historia de la Cristaloterapia: Del Pasado al Presente</p>
+                    <a href="cristaloterapia" class="btn-gral">SABER MÁS</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</article>
+
+
+{% include 'pie.html' %}
