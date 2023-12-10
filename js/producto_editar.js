@@ -11,7 +11,7 @@ titulo:"",
 descripcion:"",
 descuento:0,
 precio:0,
-url:'http://127.0.0.1:5000/productos/'+id,
+url:'https://tpofinalcrystalzen.pythonanywhere.com/productos/'+id,
 }
 },
 methods: {
